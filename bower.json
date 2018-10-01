@@ -6,7 +6,7 @@
     "main": ["./dist/angular-numeraljs.js"],
     "repository": {
         "type": "git",
-        "url": "git@github.com:baumandm/angular-numeraljs.git"
+        "url": "git@github.com:gmiller-in-situ/angular-numeraljs.git"
     },
     "dependencies": {
         "numeral": "~2.0.4"
