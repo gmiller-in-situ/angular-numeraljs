@@ -21,10 +21,16 @@
       this.defaultFormat = function (format) {
         numeral.defaultFormat(format);
       };
-
+ 
+      // Takes short or long locale strings ('en' or 'en-us')
       this.locale = function (locale) {
-        numeral.locale(locale);
+        if (numeral.locales[locale] !== undefined) {
+          return numeral.locale(locale);
+        } else {
+          return numeral.locale(locale.substring(0, 2));
+        }
       };
+
 
       this.namedFormat = function (name, format) {
         formats[name] = format;
